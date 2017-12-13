@@ -1,0 +1,327 @@
+.container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#navbar {
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Myriad Pro", monospace;
+    width: 10em;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+header {
+    width: 100%;
+    padding-top: 2.5em;
+    margin: 0;
+}
+
+#content {
+    width: 100%;
+}
+
+.fa-heart {
+    color: hotpink;
+}
+
+#tunnus {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+    margin: 0 0 2px 0;
+
+}
+
+#tunnus:focus {
+    border: 3px solid #818181;
+}
+
+#salis {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+}
+
+#salis:focus {
+    border: 3px solid #818181;
+}
+
+input[type=button], input[type=submit] {
+    background-color: #555153;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #555153;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#haku {
+    background-color: #333;
+    color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 5px 5px;
+    width: 100%;
+    border: 3px solid white;
+
+}
+
+#hakuForm {
+    padding: 9px 35px 9px 20px;
+    border: black;
+}
+
+#haku:focus {
+    border: 3px solid white;
+    background-color: white;
+    color: black;
+}
+
+#header {
+    width: 100%;
+}
+
+#header img {
+    width: 100%;
+}
+
+#regNimi {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+    margin: 0 0 2px 0;
+
+}
+
+#regNimi:focus {
+    border: 3px solid #818181;
+}
+
+#salasana1 {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+    margin: 0 0 2px 0;
+}
+
+#salasana1:focus {
+    border: 3px solid #818181;
+}
+
+#salasana2 {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+}
+
+#salasana2:focus {
+    border: 3px solid #818181;
+}
+
+#deleteUser {
+    float: right;
+}
+
+#delete {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.label {
+    color: white;
+    padding: 8px;
+    background-color: #2196F3;
+    border-radius: 10%;
+    margin-left: 10px;
+
+}
+
+#profiiliTitle {
+    width: 50%;
+    margin-left: 10px;
+}
+
+#hashtag {
+    width: 10%;
+    padding: 5px 5px;
+    border: 3px solid #bbb;
+    margin: 0 0 2px 0;
+}
+
+#hashtag:focus {
+    border: 3px solid #818181;
+}
+
+#logout {
+    margin-left: 10px;
+}
+
+#ladatut {
+    margin-left: 10px;
+}
+
+#myImg1 {
+    border-radius: 80%;
+}
+
+/* --------------------------------------------------------- */
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+#likes {
+    display: none;
+}
+
+.myImg:hover > #likes {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+
+#img01 {
+    padding-top: 40px;
+    padding-left: 2.5em;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content-box {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #828282;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    padding: 0 15px 0 0;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #5d5d5d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
